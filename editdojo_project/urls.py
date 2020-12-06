@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from hello.views import my_view
-
+from todo.views import  todo_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('sayHello/', my_view),
+    path('todo/', todo_view),
 ]
